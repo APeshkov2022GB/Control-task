@@ -6,6 +6,18 @@
         array1[i] = Console.ReadLine() ?? "";
     }
 }
+void ArraySort(string[] array1, string[] array2) // сортировка массива 
+{
+    int j = 0;
+    for (int i = 0; i < array1.Length; i++)
+    {
+    if(array1[i].Length <= 3)
+        {
+        array2[j] = array1[i];
+        j++;
+        }
+    }
+}
 Console.Clear();
 Console.WriteLine("Введите количество элементов массива");
 int n = int.Parse(Console.ReadLine()?? "");
