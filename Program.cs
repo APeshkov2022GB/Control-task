@@ -1,4 +1,12 @@
-﻿Console.Clear();
+﻿void InputArray(string[] array1)  // ввода массива с клавиатуры
+{
+    for (int i = 0; i < array1.Length; i++)
+    {
+        Console.WriteLine($" Введите {i+1}-й элемент массива ");
+        array1[i] = Console.ReadLine() ?? "";
+    }
+}
+Console.Clear();
 Console.WriteLine("Введите количество элементов массива");
 int n = int.Parse(Console.ReadLine()?? "");
 string[] array1 = new string[n];
