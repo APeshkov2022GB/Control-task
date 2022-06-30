@@ -18,6 +18,14 @@ void ArraySort(string[] array1, string[] array2) // сортировка мас�
         }
     }
 }
+void PrintArray(string[] array) // вывод массива в консоль
+{
+    for (int i = 0; i < array.Length; i++)
+    {
+        Console.Write($"{array[i]}   ");
+    }
+    Console.WriteLine();
+}
 Console.Clear();
 Console.WriteLine("Введите количество элементов массива");
 int n = int.Parse(Console.ReadLine()?? "");
